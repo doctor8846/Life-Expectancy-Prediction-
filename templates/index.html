@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Expectancy Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Life Expectancy Prediction</h1>
+
+    <form action="/predict" method="post">
+        <label for="Country_ID">Country ID:</label>
+        <input type="text" name="Country_ID" required>
+
+        <label for="Year">Year:</label>
+        <input type="text" name="Year" required>
+
+        <label for="Adult_mortality">Adult Mortality:</label>
+        <input type="text" name="Adult mortality" required>
+
+        <label for="Infant_deaths">Infant Deaths:</label>
+        <input type="text" name="infant deaths" required>
+
+        <label for="Alcohol">Alcohol:</label>
+        <input type="text" name="Alcohol" required>
+
+        <label for="Percentage_Expenditure">Percentage Expenditure:</label>
+        <input type="text" name="Percentage Expenditure" required>
+
+        <label for="Hepatitis_B">Hepatitis B:</label>
+        <input type="text" name="Hepatitis B" required>
+
+        <label for="Measles">Measles:</label>
+        <input type="text" name="Measles" required>
+
+        <label for="BMI">BMI:</label>
+        <input type="text" name="BMI" required>
+
+        <label for="Under_Five_Deaths">Under-Five Deaths:</label>
+        <input type="text" name="under-five deaths" required>
+
+        <label for="Polio">Polio:</label>
+        <input type="text" name="Polio" required>
+
+        <label for="Total_Expenditure">Total Expenditure:</label>
+        <input type="text" name="Total expenditure" required>
+
+        <label for="Diphtheria">Diphtheria:</label>
+        <input type="text" name="Diphtheria" required>
+
+        <label for="HIV_AIDS">HIV/AIDS:</label>
+        <input type="text" name="HIV/AIDS" required>
+
+        <label for="GDP">GDP:</label>
+        <input type="text" name="GDP" required>
+
+        <label for="Population">Population:</label>
+        <input type="text" name="Population" required>
+
+        <label for="Thinness_1_19_Years">Thinness 1-19 Years:</label>
+        <input type="text" name="thinness  1-19 years" required>
+
+        <label for="Thinness_5_9_Years">Thinness 5-9 Years:</label>
+        <input type="text" name="thinness 5-9 years" required>
+
+        <label for="Income_Composition">Income Composition:</label>
+        <input type="text" name="Income composition of resources" required>
+
+        <label for="Schooling">Schooling:</label>
+        <input type="text" name="Schooling" required>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
